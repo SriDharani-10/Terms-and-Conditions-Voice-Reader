@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Login Page</title>
+
+    <link rel="stylesheet" href="login css.css" />
+    <script src="login_js.js" defer></script>
+    <script src="login_js_2.js" defer></script>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="whole-login-page" class="d-flex flex-row justify-content-center">
+        <div id="login-container" class="shadow-lg">
+            <form>
+                <h1 id="login-txt">Login</h1>
+                <div id="username-container">
+                    <input type="text" placeholder="Username" id="username" />
+                </div>
+                <div id="password-container">
+                    <input type="password" placeholder="Password" id="password" />
+                </div>
+
+                <div id="TandC-link">
+                    <p style="text-align:center;font-size:13px;">Read Our Terms and Conditions 
+                        <a onclick="documentReaded()" href="docpg.html" target="_blank" style="color:blue;text-decoration:underline;font-weight:500;">
+                            here</a> <br /><span style="color:red;font-size:20px;font-family:'Cambria';
+                            font-weight:bold;">OR</span><br /><span style="text-align:left;
+                            font-size:13px;">Listen to our Terms and Conditions in short here</span></p>
+                </div>
+
+                <div id="lang">
+                <label>Select a Language</label>
+                <select id="language">
+                    <option value="English">English</option>
+                    <option value="Tamil">Tamil</option>
+                    <option value="Malayalam">Malayalam</option>
+                    <option value="Telugu">Telugu</option>
+                    <option value="Kannada">Kannada</option>
+                    <option value="Hindi">Hindi</option>
+                    <option value="French">French</option>
+                    <option value="Spanish">Spanish</option>
+                </select>
+            </div>
+
+
+            <div class="d-flex flex-row justify-content-center">
+
+                <button onclick="audioPlayed()" type="button" id="playButton" class="button-styles d-flex flex-row justify-content-center">
+                    <div>
+                        <p id="btn-text">PLAY</p>
+                    </div>
+                    <div>
+                        <img src="https://cdn-icons-png.freepik.com/256/9073/9073269.png?uid=R141972062&ga=GA1.1.854379487.1706640078&semt=ais_hybrid" class="icon-size" />
+                    </div>
+                </button>
+
+
+                <button type="button" id="pauseButton" style="margin-top: 5px;" class="button-styles d-flex flex-row justify-content-center">
+                    <div>
+                        <p id="btn-text">PAUSE</p>
+                    </div>
+                    <div>
+                        <img src="https://img.freepik.com/premium-photo/3d-icon-pause-button-isolated-white-background-stop-sign-trendy-modern-vector-3d-style-can-be-used-many-purposes_839035-1808087.jpg?w=740" class="icon-size" />
+                    </div>
+                </button>
+
+
+                <button type="button" id="resumeButton" style="margin-top: 5px;" class="button-styles d-flex flex-row justify-content-center">
+                    <div>
+                        <p id="btn-text">RESUME</p>
+                    </div>
+                    <div>
+                        <img src="https://img.freepik.com/premium-photo/3d-icon-pause-button-isolated-white-background-stop-sign-trendy-modern-vector-3d-style-can-be-used-many-purposes_839035-1808087.jpg?w=740" class="icon-size" />
+                    </div>
+                </button>
+            </div>
+
+
+
+
+                
+
+
+                <div style="margin-left:113px;margin-top: 20px;" id="playback-speed-container">
+                    <label for="playback-speed">Playback Speed: </label>
+                    <select id="playback-speed">
+                        <option value="0.75">0.75x</option>
+                        <option value="1" selected>1x (Normal)</option>
+                        <option value="1.25">1.25x</option>
+                        <option value="1.5">1.5x</ption>
+                        <option value="1.75">1.75x</option>
+                        <option value="2">2x</option>
+                    </select>
+                </div>
+
+
+                <div id="i-agree-checkbox">
+                    <input type="checkbox" id="i-agree" onclick="click_box()" />
+                    <label for="i-agree">By clicking here, you are agreeing<br /> to all our terms and conditions</label>
+                </div>
+
+                <div class="login-btn">
+                    <button onclick="lgb(event)" id="loginbutton" class="login-style">Login</button>
+                </div>
+
+
+            </form>
+        </div>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,157 @@
+
+#whole-login-page {
+    background-image: url("https://img.freepik.com/free-photo/close-up-yellow-chrysanthemum-flower_23-2147835655.jpg?t=st=1725895653~exp=1725899253~hmac=7ac58b87d76292e5364337ad3cd5ab10edd40e53384ae5310cba46604446fefc&w=900");
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+    padding-bottom: 10px;
+}
+
+
+#login-container {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: black;
+    font-family: "Cambria";
+    font-weight: 600;
+    width: 450px;
+    height: 95%;
+    border-style: solid;
+    border-color: black;
+    backdrop-filter: blur(2.5px);
+    border-radius: 30px;
+    margin-top: 30px;
+}
+
+.button-styles {
+    height: 30px;
+    width: 80px;
+    font-size: 15px;
+    font-family: "Cambria";
+    font-weight: bold;
+    border-radius: 5px;
+    border-style: none;
+    margin-top: 5px;
+    margin-right: 5px;
+}
+
+
+#playButton{
+    background-color: #a5e5f2;
+    margin-right: 5px;
+    
+}
+
+
+#pauseButton{
+background-color:#fca9f3 !important;
+margin-right: 5px;
+
+}
+
+#resumeButton{
+    background-color: #59f098 !important;
+    margin-right: 5px;
+    text-align: center;
+    font-size: 14px;
+}
+
+#btn-text {
+    margin-top: 2px;
+    margin-right: 5px;
+}
+
+.icon-size {
+    width: 17px;
+    height: 17px;
+}
+
+
+
+#username {
+    width: 250px;
+    height: 35px;
+    font-family: "Times New Roman";
+    background: transparent;
+    margin-left: 20px;
+    text-align: center;
+    border-radius: 20px;
+    border-width: 1.5px;
+    border-color: black;
+    border-style: solid;
+    color: black;
+    backdrop-filter: blur(10px);
+}
+
+#login-txt {
+    text-align: center;
+    font-size: 45px;
+    font-family: "Abril Fatface";
+    font-weight: bold;
+
+}
+
+#password {
+    font-family: "Times New Roman";
+    width: 250px;
+    height: 35px;
+    background: transparent;
+    margin-left: 20px;
+    text-align: center;
+    border-radius: 20px;
+    border-width: 1.5px;
+    border-color: black;
+    border-style: solid;
+    color: black;
+    backdrop-filter: blur(10px);
+    margin-top: 20px;
+}
+
+#username-container {
+    text-align: center;
+}
+
+#password-container {
+    text-align: center;
+}
+
+#TandC-link {
+    text-align: center;
+    margin-top: 25px;
+}
+
+#i-agree-checkbox {
+    text-align: center;
+    margin-top: 15px;
+}
+
+.login-btn {
+    margin-top: 15px;
+    text-align: center;
+}
+
+.login-style {
+    background-color: #fc8686;
+    color: black;
+    border-style: solid;
+    border-width: 2px;
+    border-color: #fa053e;
+    border-radius: 3px;
+    width: 70px;
+    height: 30px;
+    cursor: not-allowed;
+    checked: false;
+}
+
+
+.instruc{
+    color:red;
+    font-size: 15px;
+    font-style: bold;
+    margin-right: 80px;
+    text-align: center;
+}
+
+#lang{
+    text-align: center;
+}
